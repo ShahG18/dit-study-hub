@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="DIT Study Hub — organized first-year DIT notes, PDF resources, and model papers.">
+  <title>DIT Study Hub — First Year Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="DIT Study Hub home">
+      <span class="brand-mark">D<span>+</span></span>
+      <span><strong>DIT Study Hub</strong><small>FIRST YEAR • STUDY SMARTER</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a class="nav-link active" href="#home">Home</a>
+      <a class="nav-link" href="#subjects">Subjects</a>
+      <a class="nav-link" href="#papers">Model Papers</a>
+      <a class="nav-link" href="#about">About</a>
+    </nav>
+    <a class="header-cta" href="#subjects">Explore notes <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR DIT LEARNING COMPANION</div>
+        <h1>Study smarter.<br><span>Score higher.</span></h1>
+        <p class="hero-text">Your first-year DIT notes, revision resources, and model papers — neatly organized in one place.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#subjects">Browse subjects <span>→</span></a>
+          <a class="btn btn-secondary" href="#papers">Explore model papers</a>
+        </div>
+        <div class="hero-proof"><div class="avatar-stack"><i>D</i><i>I</i><i>T</i></div><span>Made for focused learning</span><span class="proof-dot">•</span><span>Free study resources</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative study dashboard illustration">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="floating-tag tag-top"><span class="tag-icon purple">✦</span><span><b>Stay organized</b><small>Everything in one hub</small></span></div>
+        <div class="dashboard-card">
+          <div class="dash-top"><span class="tiny-label">YOUR STUDY SPACE</span><span class="online-dot">● LIVE</span></div>
+          <div class="dash-title">First Year DIT <span>✧</span></div>
+          <div class="dash-sub">Build your knowledge, one topic at a time.</div>
+          <div class="progress-label"><span>Learning journey</span><b>Ready to begin</b></div>
+          <div class="progress-track"><span></span></div>
+          <div class="dash-divider"></div>
+          <div class="dash-row"><span class="dash-symbol blue">▤</span><span><b>Subject notes</b><small>Quick access by subject</small></span><span class="row-arrow">↗</span></div>
+          <div class="dash-row"><span class="dash-symbol green">✓</span><span><b>Exam practice</b><small>Prepare with model papers</small></span><span class="row-arrow">↗</span></div>
+          <div class="dash-row"><span class="dash-symbol orange">↓</span><span><b>PDF resources</b><small>Keep materials at hand</small></span><span class="row-arrow">↗</span></div>
+        </div>
+        <div class="floating-tag tag-bottom"><span class="tag-icon green">✓</span><span><b>Small steps count</b><small>Keep learning consistently</small></span></div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
+      </div>
+    </section>
+
+    <section class="stats section-wrap" aria-label="Study hub features">
+      <div class="stat"><span class="stat-icon">▦</span><span><b>Subject-wise</b><small>Organized learning</small></span></div>
+      <div class="stat"><span class="stat-icon violet">⇩</span><span><b>PDF resources</b><small>Easy access to files</small></span></div>
+      <div class="stat"><span class="stat-icon mint">◎</span><span><b>Exam practice</b><small>Revise with purpose</small></span></div>
+      <div class="stat"><span class="stat-icon amber">⌕</span><span><b>Quick search</b><small>Find topics faster</small></span></div>
+    </section>
+
+    <section class="section-wrap content-section" id="subjects">
+      <div class="section-heading">
+        <div><div class="eyebrow">YOUR LEARNING LIBRARY</div><h2>Explore your <span>subjects.</span></h2><p>Pick a subject to view its notes and available study files.</p></div>
+        <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Search subjects or resources…" aria-label="Search subjects and resources"><kbd>⌘ K</kbd></div>
+      </div>
+      <div class="filter-row" id="filterRow">
+        <button class="filter-chip selected" data-filter="all">All resources <span id="allCount">6</span></button>
+        <button class="filter-chip" data-filter="notes">Subject notes</button>
+        <button class="filter-chip" data-filter="papers">Model papers</button>
+      </div>
+      <div class="resource-grid" id="resourceGrid">
+        <article class="resource-card" data-type="notes" data-search="computer application office word excel powerpoint notes">
+          <div class="card-top"><span class="subject-icon icon-blue">▣</span><span class="resource-type">SUBJECT NOTES</span></div>
+          <h3>Computer Applications</h3><p>Core computer skills, office tools, and practical concepts.</p>
+          <div class="card-meta"><span>DIT • First Year</span><span class="file-pill">PDF</span></div>
+          <a class="card-link" href="resources/README.md" target="_blank" rel="noopener">View resource <span>↗</span></a>
+        </article>
+        <article class="resource-card" data-type="notes" data-search="information technology fundamentals hardware software internet notes">
+          <div class="card-top"><span class="subject-icon icon-violet">⌘</span><span class="resource-type">SUBJECT NOTES</span></div>
+          <h3>Information Technology</h3><p>IT fundamentals, hardware, software, and digital concepts.</p>
+          <div class="card-meta"><span>DIT • First Year</span><span class="file-pill">PDF</span></div>
+          <a class="card-link" href="resources/README.md" target="_blank" rel="noopener">View resource <span>↗</span></a>
+        </article>
+        <article class="resource-card" data-type="notes" data-search="programming fundamentals logic algorithms coding notes">
+          <div class="card-top"><span class="subject-icon icon-green">{ }</span><span class="resource-type">SUBJECT NOTES</span></div>
+          <h3>Programming Fundamentals</h3><p>Build a foundation in logic, algorithms, and coding.</p>
+          <div class="card-meta"><span>DIT • First Year</span><span class="file-pill">PDF</span></div>
+          <a class="card-link" href="resources/README.md" target="_blank" rel="noopener">View resource <span>↗</span></a>
+        </article>
+        <article class="resource-card" data-type="notes" data-search="database management data tables queries notes">
+          <div class="card-top"><span class="subject-icon icon-orange">▤</span><span class="resource-type">SUBJECT NOTES</span></div>
+          <h3>Database Fundamentals</h3><p>Understand structured data, tables, and database basics.</p>
+          <div class="card-meta"><span>DIT • First Year</span><span class="file-pill">PDF</span></div>
+          <a class="card-link" href="resources/README.md" target="_blank" rel="noopener">View resource <span>↗</span></a>
+        </article>
+        <article class="resource-card" data-type="papers" data-search="model paper past paper exam practice theory">
+          <div class="card-top"><span class="subject-icon icon-pink">✎</span><span class="resource-type">MODEL PAPERS</span></div>
+          <h3>Model Paper — Set A</h3><p>Use a timed practice session to check your understanding.</p>
+          <div class="card-meta"><span>Practice • First Year</span><span class="file-pill">PDF</span></div>
+          <a class="card-link" href="resources/README.md" target="_blank" rel="noopener">View resource <span>↗</span></a>
+        </article>
+        <article class="resource-card" data-type="papers" data-search="model paper set b mock test revision exam practice">
+          <div class="card-top"><span class="subject-icon icon-yellow">◷</span><span class="resource-type">MODEL PAPERS</span></div>
+          <h3>Model Paper — Set B</h3><p>Practice another set and identify topics to revise.</p>
+          <div class="card-meta"><span>Practice • First Year</span><span class="file-pill">PDF</span></div>
+          <a class="card-link" href="resources/README.md" target="_blank" rel="noopener">View resource <span>↗</span></a>
+        </article>
+      </div>
+      <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>No resources found</h3><p>Try another search term or filter.</p></div>
+      <p class="resource-note"><span>ⓘ</span> Starter catalog: these are example categories, not verified official PBTE subject listings. Replace them with your actual syllabus and PDF files before publishing.</p>
+    </section>
+
+    <section class="paper-banner section-wrap" id="papers">
+      <div class="paper-art"><div class="paper-sheet"><span class="paper-lines"></span><span class="paper-lines short"></span><span class="paper-lines"></span><span class="paper-lines mid"></span><span class="paper-check">✓</span></div><div class="paper-pencil">✎</div></div>
+      <div class="paper-copy"><div class="eyebrow">PREPARE WITH CONFIDENCE</div><h2>Practice today.<br><span>Perform tomorrow.</span></h2><p>Make revision part of your routine. Use model papers to practice timing, review weak areas, and prepare for exam day.</p><a class="btn btn-primary" href="#subjects" data-show-papers>Browse model papers <span>→</span></a></div>
+      <div class="banner-glow"></div>
+    </section>
+
+    <section class="about-section section-wrap" id="about">
+      <div class="about-mark">D<span>+</span></div><div><div class="eyebrow">ABOUT THE HUB</div><h2>A simpler way to <span>study.</span></h2><p>DIT Study Hub is a student-friendly front end for organizing first-year Diploma in Information Technology study resources. Search the catalog, browse by category, and open your study files in a few clicks.</p></div>
+      <div class="about-points"><div><span>01</span> Easy to navigate</div><div><span>02</span> Built for mobile too</div><div><span>03</span> Your resources, organized</div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand footer-brand" href="#home"><span class="brand-mark">D<span>+</span></span><span><strong>DIT Study Hub</strong><small>LEARN AT YOUR OWN PACE</small></span></a><span>Made for students, one topic at a time.</span><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
